@@ -1,17 +1,24 @@
+/* Estilos para los párrafos */
 p {
-    font-family: Arial, sans-serif; 
-    font-size: 18px; 
-    color: #ec5353;
+    font-family: Arial, sans-serif; /* Define la fuente del texto como Arial o sans-serif si Arial no está disponible */
+    font-size: 18px; /* Establece el tamaño de la fuente a 18 píxeles */
+    color: #ec5353; /* Define el color del texto en un tono rojo */
 }
+
+/* Estilos para las tablas */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
+    width: 100%; /* Hace que la tabla ocupe el 100% del ancho disponible */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla para evitar espacios dobles */
+    text-align: center; /* Centra el contenido de las celdas */
 }
+
+/* Estilos para las celdas de encabezado y datos */
 th, td {
-    border: 1px solid black;
-    padding: 10px;
+    border: 1px solid black; /* Agrega un borde negro de 1 píxel a todas las celdas */
+    padding: 10px; /* Añade un espacio interno de 10 píxeles dentro de cada celda */
 }
+
+/* Estilos específicos para las celdas de encabezado */
 th {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Establece un color de fondo gris claro para los encabezados */
 }
