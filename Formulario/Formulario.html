@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño a dispositivos móviles -->
+    
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Enlace a la librería de iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <title>Formulario Mejorado</title>
+</head>
+<body>
+    <!-- Contenedor principal del formulario -->
+    <div class="form-container">
+        <h1><i class="fas fa-file-alt"></i> Formulario</h1> <!-- Título del formulario con icono -->
+        
+        <!-- Formulario que envía datos a la ruta "/submit" mediante POST -->
+        <form action="/submit" method="post">
+            <!-- Grupo de entrada para el nombre -->
+            <div class="input-group">
+                <label for="name"><i class="fas fa-user"></i> Nombre:</label>
+                <input type="text" id="name" name="name" required placeholder="Escribe tu nombre"> <!-- Campo obligatorio -->
+            </div>
+            
+            <!-- Grupo de entrada para el correo electrónico -->
+            <div class="input-group">
+                <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Tu correo aquí"> <!-- Validación de email -->
+            </div>
+            
+            <!-- Grupo de entrada para seleccionar la ciudad -->
+            <div class="input-group">
+                <label for="city"><i class="fas fa-map-marker-alt"></i> Ciudad:</label>
+                <select id="city" name="city" required>
+                    <option value="" disabled selected>Selecciona tu ciudad</option>
+                    <option value="Huajuapan">Huajuapan</option>
+                    <option value="Tlaxiaco">Tlaxiaco</option>
+                    <option value="Ojo de Agua">Ojo de Agua</option>
+                </select>
+            </div>
+            
+            <!-- Botón de envío con icono -->
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i> Enviar 📤
+            </button>
+        </form>
+    </div>
+</body>
+</html>
