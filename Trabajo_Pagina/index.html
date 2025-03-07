@@ -8,6 +8,11 @@
     <title>Inteligencia Artificial - IA'S</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background: linear-gradient(135deg, #084264 0%, #3d6f9e 100%);
+            background-attachment: fixed;
+            background-size: cover;
+        }
         .carousel-item img {
             height: 600px;
             object-fit: cover;
@@ -19,6 +24,13 @@
         .card-img-top {
             height: 200px;
             object-fit: cover;
+        }
+        .list-group-item:hover {
+            background-color: #007bff;
+            color: white;
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -109,70 +121,81 @@
         </button>
     </div>
 
-    <!-- Contenido Principal -->
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8">
-                <h1>Conviértete en un experto en programación web sin pasar miles de horas de investigación</h1>
-                <ul class="list-group">
-                    <li class="list-group-item">Aprende las bases de la programación web</li>
-                    <li class="list-group-item">Domina HTML, CSS y JavaScript</li>
-                    <li class="list-group-item">Explora frameworks como Bootstrap</li>
-                    <li class="list-group-item">Desarrolla proyectos reales</li>
-                    <li class="list-group-item">Accede a recursos exclusivos</li>
-                </ul>
-            </div>
+   <!-- Contenido Principal -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+            <h1>Conviértete en un experto en programación web sin pasar miles de horas de investigación</h1>
+            <ul class="list-group">
+                <li class="list-group-item">Aprende las bases de la programación web</li>
+                <li class="list-group-item">Domina HTML, CSS y JavaScript</li>
+                <li class="list-group-item">Explora frameworks como Bootstrap</li>
+                <li class="list-group-item">Desarrolla proyectos reales</li>
+                <li class="list-group-item">Accede a recursos exclusivos</li>
+            </ul>
         </div>
+    </div>
+</div>
 
         <!-- Cards -->
-        <div class="row mt-5">
-            <div class="col-12 col-md-4">
-                <div class="card text-center text-warning">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtZLqj3PpQtZeNkewOYEtphPdLtDly7PqoQ&s" alt="ChatGPT">
-                    <div class="card-body">
-                        <h5 class="card-title">ChatGPT</h5>
-                        <p class="card-text">Chat GPT es un chatbot basado en el sistema GPT y entrenado para reconocer y mantener conversaciones con las personas. Su función como herramienta basada en inteligencia artificial es interpretar las preguntas que los usuarios le hacen y ofrecer respuestas coherentes y rápidas a cambio.</p>
-                        <a href="#" class="btn btn-outline-info">Más Información 🔍</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card text-center text-warning">
-                    <img class="card-img-top" src="https://electronicaonline.net/wp-content/uploads/2023/05/Siri.webp" alt="Siri">
-                    <div class="card-body">
-                        <h5 class="card-title">Siri</h5>
-                        <p class="card-text">Siri es un asistente de voz de Apple que utiliza inteligencia artificial (IA) para interactuar con los usuarios. Siri se basa en tecnologías como el reconocimiento de voz, el procesamiento del lenguaje natural y el aprendizaje automático.</p>
-                        <a href="#" class="btn btn-outline-info">Más Información 🔍</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card text-center text-warning">
-                    <img class="card-img-top" src="https://pollingersocial.co.uk/wp-content/uploads/2024/04/LLaMA-meta-ai-model-jpeg.webp" alt="Meta IA">
-                    <div class="card-body">
-                        <h5 class="card-title">Meta IA</h5>
-                        <p class="card-text">Meta AI es un laboratorio de investigación que desarrolla inteligencia artificial (IA) y realidad aumentada y artificial. Su objetivo es generar conocimiento para la comunidad de IA.</p>
-                        <a href="#" class="btn btn-outline-info">Más Información 🔍</a>
-                    </div>
-                </div>
+<div class="row mt-5 justify-content-center">
+    <div class="col-10 col-md-3 mb-4"> <!-- Ajusté el ancho de las columnas -->
+        <div class="card text-center text-warning h-100"> <!-- Añadí h-100 para que todas tengan la misma altura -->
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtZLqj3PpQtZeNkewOYEtphPdLtDly7PqoQ&s" alt="ChatGPT">
+            <div class="card-body d-flex flex-column"> <!-- Flexbox para alinear el contenido -->
+                <h5 class="card-title">ChatGPT</h5>
+                <p class="card-text flex-grow-1"> <!-- Flex-grow para que el texto ocupe el espacio disponible -->
+                    Chat GPT es un chatbot basado en el sistema GPT y entrenado para reconocer y mantener conversaciones con las personas. Su función como herramienta basada en inteligencia artificial es interpretar las preguntas que los usuarios le hacen y ofrecer respuestas coherentes y rápidas a cambio.
+                </p>
+                <a href="#" class="btn btn-outline-info mt-auto">Más Información 🔍</a> <!-- mt-auto para alinear el botón abajo -->
             </div>
         </div>
+    </div>
+    <div class="col-10 col-md-3 mb-4">
+        <div class="card text-center text-warning h-100">
+            <img class="card-img-top" src="https://electronicaonline.net/wp-content/uploads/2023/05/Siri.webp" alt="Siri">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Siri</h5>
+                <p class="card-text flex-grow-1">
+                    Siri es un asistente de voz de Apple que utiliza inteligencia artificial (IA) para interactuar con los usuarios. Siri se basa en tecnologías como el reconocimiento de voz, el procesamiento del lenguaje natural y el aprendizaje automático.
+                </p>
+                <a href="#" class="btn btn-outline-info mt-auto">Más Información 🔍</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-10 col-md-3 mb-4">
+        <div class="card text-center text-warning h-100">
+            <img class="card-img-top" src="https://pollingersocial.co.uk/wp-content/uploads/2024/04/LLaMA-meta-ai-model-jpeg.webp" alt="Meta IA">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Meta IA</h5>
+                <p class="card-text flex-grow-1">
+                    Meta AI es un laboratorio de investigación que desarrolla inteligencia artificial (IA) y realidad aumentada y artificial. Su objetivo es generar conocimiento para la comunidad de IA.
+                </p>
+                <a href="#" class="btn btn-outline-info mt-auto">Más Información 🔍</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sección de Explicación -->
+<div class="row mt-5 align-items-center"> <!-- align-items-center para centrar verticalmente -->
+    <div class="col-12 col-md-9">
+        <h2 class="text-center">Explicación sobre las IA’S</h2> <!-- Centrar el título -->
+        <p class="text-justify text-white"> <!-- Justificar el texto y color blanco -->
+            <strong>La inteligencia artificial ha revolucionado la manera en que interactuamos con la tecnología.</strong> Desde asistentes virtuales hasta sistemas de recomendación y automatización, las IA están presentes en múltiples sectores como la salud, la educación y el entretenimiento. Conoce cómo funcionan y su impacto en nuestra vida cotidiana.
+        </p>
+        <p class="text-justify text-white"> <!-- Justificar el texto y color blanco -->
+            <strong>¿Estamos listos para vivir en un mundo donde la inteligencia artificial tome decisiones por nosotros?</strong> Descubre su impacto y forma parte del futuro tecnológico.
+        </p>
+        <div class="text-center"> <!-- Centrar los botones -->
+            <button type="button" class="btn btn-primary">Más info</button>
+            <button type="button" class="btn btn-outline-dark">Siguiente</button>
+        </div>
+    </div>
+    <div class="col-12 col-md-3 mt-5 mt-md-0 text-center"> <!-- Centrar la imagen -->
+        <img src="data:image/jpeg;base64,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" class="img-fluid rounded" alt="HTML5"> <!-- rounded para esquinas redondeadas -->
+    </div>
+</div>
 
-        <!-- Sección de Explicación -->
-        <div class="row mt-5">
-            <div class="col-12 col-md-9">
-                <h2>Explicación sobre las IA’S</h2>
-                <p>La inteligencia artificial ha revolucionado la manera en que interactuamos con la tecnología. Desde asistentes virtuales hasta sistemas de recomendación y automatización, las IA están presentes en múltiples sectores como la salud, la educación y el entretenimiento. Conoce cómo funcionan y su impacto en nuestra vida cotidiana.</p>
-                <p>¿Estamos listos para vivir en un mundo donde la inteligencia artificial tome decisiones por nosotros? Descubre su impacto y forma parte del futuro tecnológico.</p>
-                <div>
-                    <button type="button" class="btn btn-primary">Más info</button>
-                    <button type="button" class="btn btn-outline-dark">Siguiente</button>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mt-5 mt-md-0">
-                <img src="/res/bootstrap-5/ex/landing/img/html5.jpg" class="img-fluid rounded-top" alt="HTML5">
-            </div>
-        </div>
 
         <!-- Formulario de Contacto -->
         <div class="row justify-content-center mt-5 pb-5">
